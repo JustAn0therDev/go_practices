@@ -7,7 +7,7 @@ import (
 func SumTest(t *testing.T) {
 	result, err := Sum(1, 2)
 	if result == 0 || err != nil {
-		t.Fatalf("expected a sum but got %v", err)
+		t.Fatalf("expected a sum value but got %v", err)
 	}
 }
 
@@ -21,13 +21,13 @@ func SubTest(t *testing.T) {
 func MultTest(t *testing.T) {
 	result, err := Mult(1, 2)
 	if result == 0 || err != nil {
-		t.Fatalf("expected a product but got %v", err)
+		t.Fatalf("expected a product value but got %v", err)
 	}
 }
 
 func DivTest(t *testing.T) {
 	result, err := Div(1, 2)
 	if result == 0 || err != nil {
-		t.Fatalf("expected a division but got %v", err)
+		t.Fatalf("expected a division value but got %v", err)
 	}
 }

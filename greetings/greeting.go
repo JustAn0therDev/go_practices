@@ -36,6 +36,7 @@ func Hellos(names []string) (map[string]string, error) {
     return messages, nil
 }
 
+// any function named "init" will be executed when the program starts
 func init() {
 	rand.Seed(time.Now().UnixNano())
 }
