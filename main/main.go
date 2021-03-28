@@ -24,7 +24,11 @@ func main() {
 	fmt.Print("insert the second value: ")
 	fmt.Scanln(&calculation.Second)
 
-	calculation.Calculate(calculation.First, calculation.Second, &calculation.Operation)
+	result, err := calculation.Calculate(calculation.First, calculation.Second, &calculation.Operation)
 
-	fmt.Println(calculation.Result)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	fmt.Println(result)
 }
